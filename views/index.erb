@@ -1,0 +1,10 @@
+<div class="flex-container">
+
+
+<ul>
+  <% for film in @films_list %>
+      <li><a href="/film/<%= film.id %>"><%= film.title %>           <%= film.show_time %></a><br></li>
+    <% end %>
+</ul>
+
+</div>
